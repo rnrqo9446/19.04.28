@@ -1,0 +1,12 @@
+<head>
+    <title>Let me introduce Myself!!!</title>
+</head>
+<body>
+    <h1>전국배의 자기소개 블로그입니다!!!</h1>
+    <a href = "{% url 'new'%}" >글쓰기!!</a>
+    {% for p in person.all %}
+        <div class = "container">
+            <h2> <a href ="/Myapp/{{p.id}}/detail">{{p.name}}</a></h2>
+        </div>
+    {% endfor %}    
+</body>

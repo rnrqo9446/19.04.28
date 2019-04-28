@@ -1,0 +1,10 @@
+<div>
+<h1>{{person.name}}</h1>
+<p>{{person.age}}</p>
+<p>{{person.major}}</p>
+<p>{{person.grade}}</p>
+<p>{{person.hometown}}</p>
+<a href= "{% url 'home'%}">홈으로 가기!!!</a>
+<a href= "{% url 'edit' person.id %}">수정하기</a>
+<a href= "{% url 'delete' person.id %}">삭제하기</a>
+</div>

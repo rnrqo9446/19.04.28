@@ -1,0 +1,11 @@
+<head>
+    수정페이지입니당!!!
+</head>
+<body>
+    <h1> 한번 수정해볼까요옹?</h1>
+    <form method="POST" class = "post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type = "submit" calss = "brn brn-secondary">저장!!</button>
+    </form>
+</body>

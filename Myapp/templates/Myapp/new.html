@@ -1,0 +1,13 @@
+<head>
+    자기소개를 해보아요!!!
+</head>
+
+<body>
+    <h1>한번 작성해보자굿!!!!</h1>
+    <form method="POST" class = "post-form">
+        {% csrf_token %}
+        {{  form.as_p   }}
+        <button type = "submit" class = "brn brn-secondary">저장!</button>
+    </form>
+
+</body>
